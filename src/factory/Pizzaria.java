@@ -1,4 +1,4 @@
-package simple_factory;
+package factory;
 
 public class Pizzaria {
 	private Pizza pizza;
