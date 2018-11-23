@@ -1,6 +1,6 @@
 # factory
 
-Implementação do padrão de projeto factory baseado no artigo https://www.thiengo.com.br/padrao-de-projeto-factory-method
+Implementação do padrão de projeto factory baseado nos artigos https://www.thiengo.com.br/padrao-de-projeto-simple-factory , https://www.thiengo.com.br/padrao-de-projeto-factory-method , https://www.thiengo.com.br/padrao-de-projeto-abstract-factory
 
 Quando usar?
 
