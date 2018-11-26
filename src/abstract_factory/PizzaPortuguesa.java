@@ -4,7 +4,7 @@ import factory_method.Pizza;
 
 public class PizzaPortuguesa extends Pizza {
 
-	public PizzaPortuguesa(String cidade) {
+	public PizzaPortuguesa(PizzaIngredientesFactory ingredientes) {
 		// TODO Auto-generated constructor stub
 	}
 

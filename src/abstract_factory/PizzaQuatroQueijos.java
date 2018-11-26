@@ -3,20 +3,26 @@ package abstract_factory;
 import factory_method.Pizza;
 
 public class PizzaQuatroQueijos extends Pizza {
+	PizzaIngredientesFactory ingredientes;
+	private Massa massa;
+	private Queijo queijo;
+	private Molho molho;
+	private Salsa salsa;
 
-	public PizzaQuatroQueijos(String cidade) {
-		// TODO Auto-generated constructor stub
+	public PizzaQuatroQueijos(PizzaIngredientesFactory ingredientes) {
+		this.ingredientes = ingredientes;
 	}
 
 	@Override
 	public void prepara() {
-		// TODO Auto-generated method stub
-		
+		massa = ingredientes.criarMassa();
+		queijo = ingredientes.criarQueijo();
+		molho = ingredientes.criarMolho();
+		salsa = ingredientes.criarSalsa();
 	}
 
 	@Override
 	public void assa() {
-		// TODO Auto-generated method stub
 		
 	}
 
