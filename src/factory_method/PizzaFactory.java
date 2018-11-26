@@ -1,4 +1,4 @@
-package factory;
+package factory_method;
 
 public abstract class PizzaFactory {
 	protected Pizza pizza;
