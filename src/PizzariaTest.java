@@ -1,3 +1,5 @@
+import static org.junit.Assert.assertNotNull;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -17,14 +19,20 @@ public class PizzariaTest {
 	@Test
 	public void testCriarPizza_sabor_quatroqueijos() {
 		pizzaria.criarPizza("sao-paulo", "queijo");
+		
+		assertNotNull(pizzaria);
 	}
 	
 	@Test
 	public void testCriarPizza_sabor_portuguesa() {
 		pizzaria.criarPizza("riodejaneiro", "portuguesa");
+		
+		assertNotNull(pizzaria);
 	}
 	
 	@Test public void testCriarPizza_sabor_calabresa() {
 		pizzaria.criarPizza("sao-paulo", "calabresa");
+		
+		assertNotNull(pizzaria);
 	}
 }
