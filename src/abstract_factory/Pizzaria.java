@@ -9,8 +9,8 @@ public class Pizzaria {
 		
 		/*
 		 * Nesse bloco de código poderia ser feita uma outra factory do tipo PizzariaFactory com o método abstrato criarPizza(String cidade) e getIngredientes(String cidade)
-		 * em que cada tipo de concrete factory instanciaria um sabor de pizza diferente. Não será preciso diferenciar o sabor de cada concrete factory porque 
-		 * será encaminhado para cada classe o sabor que precisará ser intanciado, precisando somente diferenciar a cidade para ser recuperado em getIngredientes().
+		 * em que cada tipo de concrete factory instanciaria um sabor de pizza diferente. Não seria preciso diferenciar o sabor/tipo de cada concrete factory porque 
+		 * seria encaminhado para cada classe o sabor que precisará ser intanciado, precisando somente diferenciar a cidade para ser recuperado em getIngredientes().
 		 */
 		if (tipo.equals(SaborPizza.QUATROQUEIJOS.toString())) {
 			pizza = new PizzaQuatroQueijos(getIngredientes(cidade));
