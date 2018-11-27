@@ -10,6 +10,8 @@ Quando usar?
 
 **OBS_2.:** O Factory Method é mais baseado em herança, ou seja, pode ser que com a evolução do código o acoplamento entre as classes aumente. Já o Abstract Factory é mais baseado em composição entre as classes.
 
+**OBS_3.:** Foi aplicado no código a refatoração de substituir código de tipo string por classe, baseado no artigo https://www.thiengo.com.br/refatoracao-de-codigo-substituir-codigo-de-tipo-por-classe
+
 **Factory Method:** Usado para quando se quer instanciar um único tipo de objeto.
 
 **Abstract Method:** Usado para quando se quer instanciar uma família de objetos.
