@@ -12,11 +12,11 @@ public class Pizzaria {
 		 * em que cada tipo de concrete factory instanciaria um sabor de pizza diferente. Não será preciso diferenciar o sabor de cada concrete factory porque 
 		 * será encaminhado para cada classe o sabor que precisará ser intanciado, precisando somente diferenciar a cidade para ser recuperado em getIngredientes().
 		 */
-		if (tipo.equals("queijo")) {
+		if (tipo.equals(SaborPizza.QUATROQUEIJOS.toString())) {
 			pizza = new PizzaQuatroQueijos(getIngredientes(cidade));
-		} else if (tipo.equals("portuguesa")) {
+		} else if (tipo.equals(SaborPizza.PORTUGUESA.toString())) {
 			pizza = new PizzaPortuguesa(getIngredientes(cidade));
-		} else if (tipo.equals("calabresa")) {
+		} else if (tipo.equals(SaborPizza.CALABRESA.toString())) {
 			pizza = new PizzaCalabresa(getIngredientes(cidade));
 		}
 		
@@ -26,7 +26,7 @@ public class Pizzaria {
 	}
 	
 	private PizzaIngredientesFactory getIngredientes(String cidade) {
-		if (cidade.equals("sao-paulo")) {
+		if (cidade.equals(CidadeFilial.SAOPAULO.toString())) {
 			return new SPPizzaIngredientesFactory();
 		}
 		
